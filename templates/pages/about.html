@@ -1,0 +1,203 @@
+{% extends 'base.html' %} {% load  static  %} {% block content %}
+<section
+  class="hero-wrap hero-wrap-2 js-fullheight"
+  style="background-image: url('{%  static  'images/bg_3.jpg' %}')"
+  data-stellar-background-ratio="0.5"
+>
+  <div class="overlay"></div>
+  <div class="container">
+    <div
+      class="row no-gutters slider-text js-fullheight align-items-end justify-content-start"
+    >
+      <div class="col-md-9 ftco-animate pb-5">
+        <p class="breadcrumbs">
+          <span class="mr-2"
+            ><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a
+          ></span>
+          <span>About us <i class="ion-ios-arrow-forward"></i></span>
+        </p>
+        <h1 class="mb-3 bread">About Us</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section ftco-about">
+  <div class="container">
+    <div class="row no-gutters">
+      <div
+        class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center"
+        style="background-image: url({%  static  'images/about.jpg' %})"
+      ></div>
+      <div class="col-md-6 wrap-about ftco-animate">
+        <div class="heading-section heading-section-white pl-md-5">
+          <span class="subheading">About us</span>
+          <h2 class="mb-4">Welcome to RENTIT</h2>
+
+          <p>
+            Founded in 2022, RENTIT is a leading car rental company in
+            Mumbai, India. With a fleet of more than 150 Luxury and Sports cars, we
+            take pride in providing the best car rental services. Our fleet
+            comprises the latest models of Rolls Royce, Lamborghini, Ferrari,
+            Porsche, Bentley, Audi, Mercedes, BMW, and more. Brand new vehicles
+            from over 30 brands are always ready to serve our beloved clients
+            from all over the India. 
+          </p>
+          <p>
+            Over the years, we have earned customer's
+            trust by providing them with the best services and support. Our
+            professionally trained staff is always on top of your requirements.
+            We take every client individually and recommend the cars and
+            services according to their needs and wants. We are always ready for
+            Chauffeur service Mumbai, airport transfer, and hotel transfer. Our
+            skilled drivers can deliver your desired car anywhere in the Mumbai. We
+            focus on providing the car rental service as comfortably as possible
+            so that you don’t stress too much and focus on the fun part of
+            renting a fantastic vehicle.
+          </p>
+          <p>
+            <a href="{% url 'home' %}" class="btn btn-primary py-3 px-4"
+              >Search Vehicle</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  class="ftco-section ftco-intro"
+  style="background-image: url({%  static  'images/bg_3.jpg' %})"
+>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-md-6 heading-section heading-section-white ftco-animate">
+        <h2 class="mb-3">Do You Want To Earn With Us? So Don't Be Late.</h2>
+        <a href="#" class="btn btn-primary btn-lg">Become A Driver Soon!</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} <section class="ftco-section testimony-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7 text-center heading-section ftco-animate">
+          <span class="subheading">Testimonial</span>
+        <h2 class="mb-3">Happy Clients</h2>
+      </div>
+    </div>
+    <div class="row ftco-animate">
+      <div class="col-md-12">
+        <div class="carousel-testimony owl-carousel ftco-owl">
+          <div class="item">
+            <div class="testimony-wrap rounded text-center py-4 pb-5">
+              <div class="user-img mb-2" style="background-image: url('{% static 'images/MayankRC200.jpeg' %}'); background-position:top;">
+              </div>
+              <div class="text pt-4">
+                <p class="mb-4">Amazing service from start to end. Loved the drive of the car. Amazing Car collections. Completed my dream of driving a supercar in India.</p>
+                <p class="name">Priyank Mishra</p>
+                <span class="position">Marketing Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">  
+            <div class="testimony-wrap rounded text-center py-4 pb-5">
+              <div class="user-img mb-2" style="background-image: url('{% static 'images/Suraj.jpeg' %}'); background-position:top;">
+              </div>
+              <div class="text pt-4">
+                <p class="mb-4">RENTIT offer you every service you want and need to have the most excellent adventure in the Mumbai. Great Experience.</p>
+                <p class="name">Suraj Mishra</p>
+                <span class="position">Interface Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap rounded text-center py-4 pb-5">
+              <div class="user-img mb-2" style="background-image: url('{% static 'images/Madhav.jpeg' %}'); background-position:top;">
+              </div>
+              <div class="text pt-4">
+                <p class="mb-4">What an amazing experience to get in India. Fast cars in India without owning it is a excellent concept by this company RENTIT.</p>
+                <p class="name">Madhav Thakur</p>
+                <span class="position">UI Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap rounded text-center py-4 pb-5">
+              <div class="user-img mb-2" style="background-image: url('{% static 'images/MayankNS.jpeg' %}')">
+              </div>
+              <div class="text pt-4">
+                <p class="mb-4">Great services at a decent price point. Best part is to drive a supercar in Mumbai. Totally loved it. Thanks once again!</p>
+                <p class="name">Dhiraj Mishra</p>
+                <span class="position">Web Developer</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap rounded text-center py-4 pb-5">
+              <div class="user-img mb-2" style="background-image: url('{% static 'images/Vishwajeet.jpeg' %}')">
+              </div>
+              <div class="text pt-4">
+                <p class="mb-4"> Buying your desired model can be a little out of budget, but renting it from our RENTIT in Mumbai is affordable. By making your trip to the Mumbai.</p>
+                <p class="name">Vishwajeet Vishwakarma</p>
+                <span class="position">System Analyst</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> {% endcomment %}
+<section class="ftco-counter ftco-section img" id="section-counter">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate"
+      >
+        <div class="block-18">
+          <div class="text text-border d-flex align-items-center">
+            <strong class="number" data-number="5">0</strong>
+            <span>Year <br />Experienced</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate"
+      >
+        <div class="block-18">
+          <div class="text text-border d-flex align-items-center">
+            <strong class="number" data-number="1090">0</strong>
+            <span>Total <br />Cars</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate"
+      >
+        <div class="block-18">
+          <div class="text text-border d-flex align-items-center">
+            <strong class="number" data-number="2590">0</strong>
+            <span>Happy <br />Customers</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate"
+      >
+        <div class="block-18">
+          <div class="text d-flex align-items-center">
+            <strong class="number" data-number="67">0</strong>
+            <span>Total <br />Branches</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

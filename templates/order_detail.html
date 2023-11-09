@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Order Detail {% endblock %}
+
+{% block content %}
+
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('{% static 'images/bg_3.jpg' %}');" data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+      <div class="col-md-9 ftco-animate pb-5">
+        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Cars <i class="ion-ios-arrow-forward"></i></span></p>
+        <h1 class="mb-3 bread">Your Order Details</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class ='col-sm-6 col-sm-offset-3 mx-auto py-5 text-dark'>
+    <strong><p style="color: red">Your booking was successfully.We will contact you soon regarding your booking.Your booking details are as bellow
+    </p></strong>
+    <p class="list-group-item active bg-dark btn-outline-dark">
+      <strong><span class="glyphicon glyphicon-tag "></span> Booking Detail</strong>
+    </p>
+    <a href="{% url 'cars-details' detail.car.id %}" class="list-group-item text-dark" ><strong>Car name: </strong>{{detail.car.car_name}}</a>
+    <a href="" class="list-group-item text-dark"><strong>Employee name: </strong>{{detail.user.username}}</a>
+  <a href="" class="list-group-item text-dark" ><strong>Phone No: </strong>{{detail.cell_no}}</a>
+  <a href="" class="list-group-item text-dark"><strong>Address: </strong>{{detail.address}}</a>
+  <a href="" class="list-group-item text-dark"><strong>From: </strong>{{detail.date}}</a>
+  <a href="" class="list-group-item text-dark"><strong>To: </strong>{{detail.to}}</a>
+  <a href="" class="list-group-item text-dark"><strong>Order Id: </strong>{{detail.id}}</a><br>
+  <div class="pull-right">
+    <a href="{% url 'order_delete' detail.id %}"><button type="button" class="btn btn-outline-danger"><span class="glyphicon glyphicon-pencil"></span> Cancel Booking</button></a>
+    <a href=""><button type="button" class="btn btn-outline-dark"><span class="glyphicon glyphicon-pencil"></span> Print</button></a>
+    
+  </div>
+</div>
+</div>
+
+{% endblock %}
